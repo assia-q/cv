@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Personnel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Ensures space between sections */
+      background-color: #f4f4f4;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eef2f7; /* Header background color */
+      color: rgb(17, 16, 16);
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10; /* Ensure header stays on top */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      color: rgb(20, 20, 20);
+      text-decoration: none;
+      padding: 8px 15px;
+      background-color: transparent;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      display: flex;
+      justify-content: center; /* Horizontally center */
+      align-items: center; /* Vertically center */
+      height: calc(100vh - 60px); /* Subtract header height */
+      margin-top: 60px; /* Ensure space below the fixed header */
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Ensure content is centered */
+      gap: 20px;
+      max-width: 80%;
+      text-align: center; /* Optional, center text */
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .about-text {
+      max-width: 70%;
+    }
+
+    .about-text h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .about-text h2 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #555;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .about-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center; /* Align buttons in the center */
+    }
+
+    .about-buttons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .about-buttons a:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    /* Contact Info Section */
+    .contact-info {
+      display: flex;
+      justify-content: space-between; /* Align items horizontally */
+      align-items: center;
+      padding: 10px;
+      width: 97%;
+      background-color: #eef2f7; /* Background color for the contact info */
+      position: relative;
+      bottom: 0;
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .contact-info p {
+      margin: 5px;
+    }
+
+    .contact-info span {
+      color: #007BFF;
+    }
+
+    /* Contact Info - Adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column; /* Stack items on smaller screens */
+        text-align: center;
+      }
+    }
+  </style>
+
+  <header>
+    <h1>Assia Aoulida</h1>
+    <nav class="nav-links">
+      <a href="cv1.html">CV</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <img src="OIP.jpeg" alt="Photo de profil" class="profile-pic">
+      <div class="about-text">
+        <h1>Salut</h1>
+        <h2>À propos de moi</h2>
+        <p>
+          Paragraphe. Cliquez ici pour le modifier et <br>ajouter votre propre texte. C'est l'espace<br> idéal pour raconter une histoire et vous<br> présenter à vos visiteurs.
+        </p>
+        <div class="about-buttons">
+          <a href="cv1.html">CV</a>
+          <a href="#projects">Project</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Information Section (Positioned at the Bottom) -->
+  <div class="contact-info">
+    <p>Téléphone: <span>+212 123 456 789</span></p>
+    <p>Email: <span>example@example.com</span></p>
+    <p>Suivez-moi</p>
+    <p>Politique de confidentialité |<br> Mentions légales | Politique de cookies</p>
+    <p>© 2035 par Nicole Rose.<br> Créé avec Wix.com</p>
+  </div>
+</body>
+</html>
